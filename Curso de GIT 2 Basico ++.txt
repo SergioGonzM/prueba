@@ -1,0 +1,38 @@
+Curso de Git parte 2:
+
+Para crear un branch nuvevo:
+	- git branch feature/feature_X
+	- Esto tambien se puede hacer con: git checkout -b feature/feature_X
+	
+Para eliminar una rama:
+	- git branch -d feature/feature_X
+	
+Para ver a donde estamos apuntando
+	- git remote -v: es para ver a donde estamos apuntando
+
+Para listar las ramas simple
+	- git branch --list
+	
+Para ver la lista de todas las ramas con los archivos ocultos
+	- git branch -a: 
+	
+Para cambiar de rama: 
+	- git checkout master: para cambiarme a la rama master
+	
+Para gacer una nueva rama mejorcita y mejor entendible
+	- git switch -c new_branch
+
+Para cambiar a la rama anterior
+	- git checkout - : me voy a la rama en donde estaba anteriormente
+	
+Para agregar un nuevo archivo
+	- echo "Feature X" > x.txt
+	
+Para hacer que la rama remota sea la misma que en la local
+	- git push --set-upstream origin feature/feature_x
+	
+Para revertir cambios:
+	- git reset --hard "aqui va el n. de hash que se ve en git log --oneline"
+
+
+

@@ -1,0 +1,34 @@
+Areas de servicio clave
+	Computo
+	Almacenamiento
+	Bases de datos
+	Red
+	Seguridad
+	
+Como funciona?
+	AWS posee y mantiene el hardware conectado a la red
+	Usted proporciona y usa los recursos que necesita
+	
+MOdelos de implementacion de la nube
+	En instalaciones del cliente (data center del cliente)
+	Hibrido (Nube e instalaciones del cliente)
+	Nube (100% de las apps corren en la nube de AWS)
+	
+Infraestructura global de AWS
+	Data center
+	Elijo una region
+		Gestion de datos
+		Latencia
+		Costo
+	Infraestrctura de borde
+		Aamazon Cloudfront 
+		AWS Outposts (Infraestructura de datos dentro de las instalaciones del cliente)
+		Zonas locales
+		AWS Wavelength (Infraestrcutura y servicios de AWS a traves de 5G)
+	
+Como interacturar con AWS
+	AWS Management Console (INterfzsa grafica
+	AWS CLI
+	
+
+	

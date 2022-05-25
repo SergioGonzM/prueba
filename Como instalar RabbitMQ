@@ -1,0 +1,40 @@
+Como instalar Rabbitmq
+
+- actualizar con: sudo apt-get update
+
+- instalar erlang (ya lo tenia por elixir)
+
+- inslatar rabbitmq con: sudo apt-get install rabbitmq-server
+
+- levantar el servidor con: sudo systemctl enable rabbitmq-server
+
+- ver el status del servidor con: sudo systemctl status rabbitmq-serve
+
+- instalar la interfaz grafica con: sudo rabbitmq-plugins enable rabbitmq_management
+
+
+- abrir en el navegador la direccion: localhost:15672
+
+- crear las credenciales del usuario con:
+	
+	- sudo rabbitmqctl add_user admin admin
+	- sudo rabbitmqctl set_user_tags admin administrator
+	- sudo rabbitmqctl set_permissions -p / admin "." "." "."
+	
+- Ya se puede acceder a la pagina con esas credenciales
+
+- Para listar los queues:
+
+sudo rabbitmqctl list_queues
+
+- Forgotten acknowledgment
+
+sudo rabbitmqctl list_queues name messages_ready messages_unacknowledged
+
+- Para listar los exchanges
+
+sudo rabbitmqctl list_exchanges
+
+- Para listar los bindings:
+
+sudo rabbitmqctl list_bindings
