@@ -1,0 +1,97 @@
+Curso de Pruebas Unitarias
+
+- Problema
+	Facturacion Electronica
+		Documento Valido por el sello y que sea por una empresa valida
+		Fecha de emision y fecha de timbrado
+	Condiciones
+		Timbrado de CFDI
+		EL PAC tiene un plazo de 72 horas despes de la emision del 			documentos para certificar el CFDI
+		
+		Contribuyente - emite el documento 
+		PAC - recide el documentos, hace validaciones antes de poner el 			sello para poder envia  rlo al SAT
+		
+		
+	Alcance 
+		Las reglas del SAT solo aplican a las operaciones realizadas dentro 			del territorio 
+		El SAT incluye husos horarios en la facturacion electronica
+		
+
+El programa de elixir tiene que capturar las fechas de Emision, fecha de timbrado y la zona horaria para verificar que el documento es valido
+fecha de emision 
+fecha de timbrado
+y tambien la zona horaria
+
+
+Al programar algo hay que hacer un unit test
+
+
+- Las pruebas unitarias sirven para probar 
+
+Objetivos de las pruebas
+
+- La unidad del sistema son metodos o funciones que contributyen a toda la funcionalidad del software
+	- Bajo nivel -> Partes pequeñas del SW
+	- Usualmente las pruebas son escritras por el desarrollador
+	- Son mas rapidas que otro tipo de pruebas
+	
+
+Sesion 2
+Tecnicas de analisis de caja negra
+	- Particion equivalente
+		Por rangos, valores, conjuntos
+	- Valores limite
+		Valores frontera
+		n-1, n, n+1 
+		aplicar las pruebas unitarias solo con los valores limite
+		Cuando se asigna un valor verificar que no rebase el limite
+		
+Hacer pruebas unitarias:
+CDMX
+En tijuana
+SInaloa
+cancun
+
+Son 12 pruebas unitarias en total, hacer 3 pruebas por cada happy path
+
+Para el ejercicio:
+	- 72 horas + 5 minutos es el rango, son tres clases 
+	- 
+	
+	Rangos fechas
+	
+	
+-4 horarios diferentes en Mexico
+para cada 
+
+
+Tarea 4:
+
+Pasar el valor del timbrado, que es el mismo apra cada uno
+Segun la fecha de emision de las capturas
+Mostrar el Status y mandar capturas de eso
+
+
+
+Sesion 3:
+	Tecnicas de caja blanca
+	- Identificar todas las rutas: esto es identificar los ciclos y las decisiones logicas
+	
+	Que nos evita?
+	- errores logicos y suposiciones incorrectas
+	- Errores tipograficos (ortografia)
+	
+	Que se prueba?
+	- Pruebas de camino basico
+	- Pruebas de bucles
+	- Pruebas de cobertura
+	
+	Camino Basico
+	- Tecnica que nos ayuda a identificar cada camino independiente de un codigo 
+	- Se necesita trabajar con grafos de flujo
+	
+Sesion 4:
+	
+	
+	
+		

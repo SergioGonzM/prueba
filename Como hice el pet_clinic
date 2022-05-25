@@ -1,0 +1,58 @@
+Generación de aplicación pet_clinic:
+	- root$ mix phx.new pet_clinic --no-dashboard --no-live --no-mailer
+	
+	- $ cd pet_clinic
+	
+	- mix ecto.create 
+	
+	- mix phx.server o iex -S mix phx.server
+
+¿Que fue lo que hice?
+
+1. En page_controller.ex:
+	Añadi una nueva funcion en donde me abriria otra pagina
+	
+	def bar(conn, _params) do
+    		render(conn, "other_index.html")
+  	end
+	
+2. En router.ex:
+	Añadi la funcion para que me dirigiera a la funcion anterior
+
+	- get "/bar", PageController, :bar
+	
+	
+3. En router.ex
+	Añadi otro scope en donde ahora se llamara foo
+	
+	- scope "/foo", PetClinicWeb do
+	    pipe_through :browser
+
+	    get "/", PageController, :index 
+	    get "/bar", PageController, :bar
+	end
+	
+4. En la terminal:
+	- mix phx.gen.html PetClinicService Pet pets name:string age:integer type:string sex:string
+	
+	- mix ecto.migrate
+	
+	- mix phx.routes para ver todas las rutas para mandar a llamar a una funcion
+	
+	- accedo a http://localhost:4000/pets y modifico a mis pets ahi mero
+	
+	- Para añadir un pet desde el iex:
+	
+	- alias PetClinic.PetClinicService.Pet (dentro de la carpeta de pet_cinic_service -> pet.ex)
+	
+	- %Pet{name: "keisi", age: 10, sex: "female", type: "dog"}
+	
+	- alias PetClinic.Repo
+	
+	- Repo.all(pets) = para listar todos los pets desde iex
+	
+	- alias PetClinic.PetClinicService
+	
+	- PetClinicService.create_pet(%{name: "keisi", age: 10, sex: "female", type: "dog"})
+		Si actualizo la pagina si se ven los cambios
+

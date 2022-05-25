@@ -1,0 +1,13 @@
+- Primero es pensar como hacer la matriz
+
+- Si hay cosas que solo se necesitan calcular una vez lo puedo poner como 
+
+- @tag :skip -> para saltarme los tests
+
+- Puedo quitar una variable de una funcion anonima si no se ocupa en el cuerpo de la misma funcion 
+
+- %__MODULE__: para hacer referencia al modulo
+
+Llamadas de funcion de cola
+
+

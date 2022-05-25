@@ -1,0 +1,21 @@
+- Para poner un icono en el logo que sale en la pestaña
+Tiene que ser una imagen .ico
+link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+
+- Para importar un archivo css dentro de otro archivo css
+
+- Se puede declarar una variable en css asi:
+:root {
+    --light-color: #efefef;
+}
+
+- Se puede ocupar en cualquier otro archivo asi:
+@import "./variables.css";
+background-color: var(--light-color);
+
+
+- Clase 2:
+
+- .box~.box son para aplicar estilos al segundo elemento box que lo precede otro elemento box
+
+- Clase 3 ver bien los stilos heredados y weas de esas avanzadas

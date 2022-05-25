@@ -1,0 +1,124 @@
+Comandos Basicos de Bash:
+
+	- ls = lista los directorios que tengo en mi carpeta
+	- cd Ruta_de_mi_Carpeta = ingresa a un directorio en especifico
+	- pwd = muestra el directorio donde me encuentro
+	-cd = salir del directorio de donde me encuentro
+	-mkdir nombre_carpeta = crear nueva carpeta 
+	-la -a = muestra todos los archivos en mi directorio y tambien los que esten 		ocultos
+
+Comandos basicos de git:
+	-git init = inicia un repositorio vacio
+	-code . = abrir la carpeta en donde me encuentro
+	-git status = nos dice el estado de neustro directorio
+	-git add nombre_del_archivo = agrego el nuevo archivo a git
+  CUando modifique mi archivo puedo guardarlo con: git add nombre_archivo.txt 
+  o ignorarlo con: git restore nombre_archivo.txt  
+  
+Para poner commit
+  	-git commit -m "Commit inicial"
+  	-Si solo pongo git commit = me abrira el code para poner el commit
+  
+Para modificar el commit en caso de que este mal escrito o algo asi
+	-git commit --ammend
+  	
+Para agregar cambios y tambien el commit 
+	git commit -am "explicacion del commit"
+  
+Para borrar un archivo
+  	git rm nombre_archivo = borro un archivo
+  	
+Para restaurar un archivo:
+ 	git restore --staged archivo.txt
+ 	git restore archivo.txt 
+
+Para renombrar un archivo:
+	git mv archivo1.txt nuevonombre.txt
+
+Para ignorar archivos y/o directorios:
+	agregar un archivo a nuestra carpeta llamado .gitignore 
+	git add .gitignore
+	git commit -m "agregando un archivo gitignore"
+	
+Un git status mas elegante:
+	git status -s
+
+Para visualizar los cambios:
+	git diff
+
+Para ver los cambios pero que se encuentre en la etapa de stage
+	git diff --staged
+	
+Para ver el historial
+	git log --oneline
+	
+Como cambiar de rama:
+	git checkout nombre_rama
+
+Como agregar una nueva rama:
+	git checkout -b nombre_rama
+	
+Para agregar los cambios que hicimos en una rama aparte:
+	Me voy a la rama principal
+	git merge nombre_de_la_rama_a_insertar
+
+Si ya tengo mi directorio con el git init
+	- git remote add origin https://github.com/SergioGonzM/miweb.git
+	- git push origin master 
+	
+	Y si no funciona: 
+	- git branch -M master
+	- git push -u origin master
+	
+Para subir los cambios y a donde subir los cambios:
+	Crear el repo en github
+	git init #en la carpeta en donde voy a hacer el git remote
+	git remote add origin https://github.com/SergioGonzM/miweb.git
+	git add
+	git commit
+	git push nos ayuda para subir los cambios
+	pero como no tenemos una rama main la creamos:
+	git push -u origin master
+	- git push --set-upstream origin master
+	
+De manera mas facil (porque luego falla la anterior)
+	- Crear el repo en git hub y copiar el link
+	- Dentro de la carpeta hacer un git init 
+	- Hacer git clone
+	- git status
+	- git add
+	- git commit
+	- git push
+	Si se pone loco
+	- git push --set-upstream origin master
+	
+Para subir cambios:
+	Modificamos el archivo con algun editor de texto
+	git add archivos
+	realizar el commit
+	git push
+	
+Para subir una nueva rama a github
+	git push -u origin ramaC
+	
+	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
+	
+	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
+	
+	
+Manera definitiva de subir cambios a un repositorio:
+	- git init en la carpeta
+	- crear el repositorio en git
+	- git remote add origin https://github.com/SergioGonzM/project_name.git
+	- git add
+	- git commit 
+	- git push --set-upstream origin master
+
+	
+	
+	
+	
+
+	
+	
+

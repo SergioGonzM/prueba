@@ -1,0 +1,70 @@
+Primeros pasos:
+
+	mix archive.install hex phx_new
+
+	mix archive.install hex phx_new
+
+Instalar postgresql:
+
+	sudo apt install postgresql postgresql-contrib
+
+Iniciar sesion en la base de datos:
+
+	sudo -i -u postgres
+
+	psql
+
+	\l para listar todas las bases de datos
+
+Crear una database
+
+	$ sudo -i -u postgres
+	
+	psql
+	
+	CREATE database sergio;
+	
+Crear un usuario
+
+	create user sergio with encrypted password 'Khaalesi1$';
+	
+	grant all privileges on database sergio to sergio;
+	
+	\q
+	
+	exit
+	
+	$ psql 
+	
+Cambiar la contraseña para el usuario postgres
+	
+	sudo -u postgres psql 
+	
+	alter user postgres with password 'postgres'
+	
+Create Stock and Crypted database
+
+	sudo -i -u postgres
+	
+	psql
+	
+	CREATE database alpha;
+	
+	grant all privileges on database alpha to sergio;
+	
+	exit
+	
+	$psql
+	
+	\c alpha
+		You are now connected to database "alpha" as user "sergio".
+		
+GUI para postgres
+
+	sudo apt-get install pgadmin3
+	
+
+	
+	wget https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v2.1/pip/pgadmin4-2.1-py2.py3-none-any.whl
+	
+	

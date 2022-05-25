@@ -1,0 +1,22 @@
+curl -fsSL https://deb.nodesource.com/setup_16.x | sudo -E bash -
+
+sudo apt-get install -y nodejs
+
+node -v
+
+Notify tools:
+
+	sudo apt-get install inotify-tools
+	
+
+Como crear un proyecto en Phoenix:
+
+	mix phx.new <project_name>
+	
+	cd <project_name>
+	
+	mix ecto.create
+	
+	mix phx.server
+	
+	iex -S mix phx.server

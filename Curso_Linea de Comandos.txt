@@ -1,0 +1,156 @@
+La terminal se puede inciiar con ctrl+ alt + t
+
+Comandos:
+	printenv SHELL: para verificar que version de shell estamos utilizando
+	
+	ls: visualizar el contenido de un directorio 
+	
+	~$: es el home directory o yo lo entiendo como la raiz
+	
+	ls --help: nos muestra la ayuda de que argumentos puedo poner despues de ls 
+	
+	pwd: conocer la ruta de donde estamos ubicados
+	
+	printenv: imprime todas las variables de ambiente
+	
+	cd: para poder moverme entre directorios
+	
+	cd ~ o solo cd: para regresar al directorio home 
+	
+	history: muestra todo el historial
+	
+	ctrl+a: el prompt se va al inicio
+	
+	ctrl+e: el prompt se va al final
+	
+	ctrl+l: se hace un clear de la pantalla 
+	
+	ctrl+r: Nos permite buscar comandos en nuestra historia 
+	
+	ctrl+u: borra el comando que estaba capturando
+	
+Sesion 2:
+	
+	mkdir nombre_directorio: nos permite crear un nuevo directorio
+	
+	sudo: para ser superusuario
+	
+	las rutas absolutas empiezan con una diagonal /var <- esta es una ruta abs
+	
+	apt: Advanced Packaging Tool
+	
+	curl: nos permite descargar documentos de la web
+	
+	tree nombre_directorio/
+	
+Sesion 3:
+
+	unzip: nos permite descomprimir
+	
+	echo: sirve para imprimir cosas en texto
+	
+	cat: lee el contenido de un archivo y lo imprime en pantalla
+	
+	less: nos permite navegar dentro de un archivo, para salir se ocupa la 		letra q
+	
+	head -3 : imprime solamente las primeras 3 lineas de un archivo
+	
+	tail -3: imprime las 3 ultimas lineas de un archivo 
+	
+	wc -l: cuenta el numero de lineas de un archivo
+	
+	grep <palabra a buscar>: nos muestra los textos que contienen esa palabra
+	
+	grep -i: para que no diferencie entre mayusculas y minusculas
+	
+	grep -n: nos muestra el numero de la linea en donde se encuentra esa wea
+	
+	grep -C 3: para que nos devuelva 3 lineas hacia arriba y 3 hacia abajo
+
+Sesion 4:
+
+	Se pueden combinar comandos con el operador pipe | 
+	
+	cat /usr/share/dict/words | tail -100 | grep -ic "zip"
+	
+	ls -l para mostrar las carpetas pero con sus caracteristicas
+	
+	ls -lh imprime el tamaño del archivo con todas los directorios que tiene
+	
+	ls -alh muestra todos los archivos, incluyendo los archivos ocultos
+	
+	h: visualizar el tamaño de un archivo representado por bytes, kilobytes, etc
+	
+	ls -alh .bashrc: es un archivo que contiene los comandos que se han hecho
+	
+	ls -lhd <Documents>: Muestra informacion del directorio DOcuments
+	
+	ls -lh <Documents>: Muestra informacion dentro del directorio Documents
+	
+Sesion 5:
+	
+	less processses.txt
+	
+	> overrides content
+	
+	>> append content
+	
+	ls -lhR code muestra el contenido del directorio actual y tambien el 	contenido de los directorios que esten del directorio actual
+	
+	tree -a nos muestra toda la estructura del directorio actual, incluyendo 		los archivos ocultos
+	
+	tree -h: muestra la estructura del directorio actual con el peso de cada 		archivo
+	
+	find / -name "words": busca en todo el sistema el archivo words 
+	
+	find /usr/share/ -name "word*": nos muestra todos los archivos que 		comiencen con la palabra "word"
+	
+	find /var/log -name "*.log": muestra todos los archivos que termine 		con .log 
+	
+	find /var/log/apt/ -iname "*.LOG": la busqueda se hace insensitiva entre 		mayusculas y minisculas
+	
+	
+Sesion 6:
+	
+	df -h: Para ver todas las particiones de nuestra computadora
+	
+	echo 123 > numbers.txt: creo un archivo con ese contenido
+	
+	mkdir backup: creo una carpeta
+	
+	cp numbers.txt backup/: copio el archivo a esa nueva carpeta
+	
+	cp numbers.txt backup/numbers.backup: copiar un documentos a la misma 	 carpeta pero con el nomnre "numbers.backup"
+	
+	mkdir files: creo el directorio files
+	
+	echo abc > files/letters.txt: inserto abc en un archivo nuevo en mi 		directorio files
+	
+	echo "# project README" > files/readme.md: lo mismo de arriba
+	
+	cp -r files backup: para copiar el directorio files a backup
+	
+	-r: es para hacerlo de forma recursiva
+
+	ls -alh *.txt: muestra todos los archivos con su version larga que 		terminen con un .txt
+	
+	mv processes.txt processes-march-2022.txt: para mover el contenido de mi 		arhivo processes.txt a otro nuevo.
+	
+	mv processes-march-2022.txt backup/: para mover el archivo al directorio 		backup/
+	
+	rm numbers.txt: para borrar un archivo con ese nombre
+	
+	rm backup/*.txt: eliminar un grupo de archivos de la carpeta backup
+	
+	rm -r backup/: para eliminar el directorio backup con todos los archivos
+	
+	touch file.txt: actualizar la fecha y hora del archivo y si no existe el archivo, lo crea
+	
+	
+	
+	
+	
+	
+	
+	
+	
